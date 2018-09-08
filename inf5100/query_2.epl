@@ -1,0 +1,4 @@
+SELECT 
+	MAX(wind_direction), MIN(wind_direction)
+FROM
+ 	Tick.win:length_batch(200)

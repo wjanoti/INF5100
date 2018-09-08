@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="lib" path="/home/wjanoti/workspace/UiO/INF5100/mandatory_exercise/esper-4.9.0/esper-4.9.0.jar"/>
+	<classpathentry kind="lib" path="/home/wjanoti/workspace/UiO/INF5100/mandatory_exercise/esper-4.9.0/esper/lib/antlr-runtime-3.2.jar"/>
+	<classpathentry kind="lib" path="/home/wjanoti/workspace/UiO/INF5100/mandatory_exercise/esper-4.9.0/esper/lib/cglib-nodep-2.2.jar"/>
+	<classpathentry kind="lib" path="/home/wjanoti/workspace/UiO/INF5100/mandatory_exercise/esper-4.9.0/esper/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/wjanoti/workspace/UiO/INF5100/mandatory_exercise/esper-4.9.0/esper/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

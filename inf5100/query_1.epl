@@ -1,0 +1,5 @@
+SELECT 
+	location
+FROM
+	Tick
+WHERE elevation > 1000 AND elevation < 1500
