@@ -1,5 +1,4 @@
 SELECT 
 	location
 FROM
-	Tick
-WHERE elevation > 1000 AND elevation < 1500
+	Tick(elevation > 1000 AND elevation < 1500).std:firstunique(location)
