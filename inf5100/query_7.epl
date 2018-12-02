@@ -1,0 +1,17 @@
+SELECT
+        e0.location as location, e0.timestamp AS start_date, e3.timestamp AS end_date
+FROM
+        pattern[
+                every e0=Tick -> e1=Tick(e1.temp_fahrenheit >
+                e0.temp_fahrenheit and e1.location = e0.location) -> e2=Tick(e2.temp_fahrenheit >
+                e1.temp_fahrenheit and e2.location = e1.location) -> e3=Tick(e3.temp_fahrenheit >
+                e2.temp_fahrenheit and e3.location = e2.location)
+        ]
+        
+----
+
+SELECT
+        e0.location as location, e0.timestamp AS start_date, e3.timestamp AS end_date
+FROM
+        pattern[(e0.temp_fahrenheit*2) and e0.location = e1.location)]
+    
