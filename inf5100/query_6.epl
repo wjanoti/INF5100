@@ -1,6 +1,6 @@
 SELECT
-      timestamp, weather_station
+        timestamp, weather_station
 FROM
-      Tick.win:length_batch(100)
+        Tick.win:length_batch(100)
 HAVING
-      temp_fahrenheit > AVG(temp_fahrenheit)
+        temp_fahrenheit > AVG(temp_fahrenheit)
