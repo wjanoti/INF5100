@@ -1,0 +1,10 @@
+SELECT
+        e0.location AS location, e0.temp_fahrenheit, e1.temp_fahrenheit,
+        e0.timestamp AS start_date, e1.timestamp AS end_date
+FROM
+        pattern[
+                every e0=Tick -> e1=Tick(e1.temp_fahrenheit >
+                e0.temp_fahrenheit AND e1.location = e0.location)
+        ]
+WHERE
+        e1.temp_fahrenheit - e0.temp_fahrenheit > 10 AND e1.timestamp.coincides(e0.timestamp, 1 hour)
