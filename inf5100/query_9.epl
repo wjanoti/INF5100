@@ -1,0 +1,8 @@
+SELECT
+        e0.location as location, e0.timestamp AS start_date, e1.timestamp AS end_date
+FROM
+        pattern[every e0=Tick(weather='Mostly Cloudy') ->
+                e1=Tick(e1.weather = 'Clear' AND e1.temp_fahrenheit > e0.temp_fahrenheit AND e1.location = e0.location)
+        ]
+WHERE
+        e1.timestamp.coincides(e0.timestamp, 2 hours)
