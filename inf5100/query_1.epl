@@ -1,4 +1,4 @@
-SELECT 
+SELECT
 	location
 FROM
-	Tick(elevation > 1000 AND elevation < 1500).std:firstunique(location)
+	Tick(elevation BETWEEN 1000 AND 1500).std:firstunique(location)
