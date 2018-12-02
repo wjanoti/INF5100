@@ -1,0 +1,11 @@
+SELECT
+        e0.timestamp AS start_date, e2.timestamp AS end_date, e2.location AS location
+FROM
+        pattern[
+                every e0=Tick -> (e1=Tick(e1.temp_fahrenheit <
+                e0.temp_fahrenheit AND e0.location = e1.location) ->
+                e2=Tick(e2.temp_fahrenheit < e1.temp_fahrenheit AND e2.location =
+                e1.location))
+        ]
+WHERE
+        e2.timestamp.coincides(e0.timestamp, 1 hour)
