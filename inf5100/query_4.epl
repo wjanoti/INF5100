@@ -1,0 +1,11 @@
+- every A -> B: B1 for {A1, B1}, B3 for {A3, B3} and B4 for {A4, B4}
+
+- A -> Every B:  B1 for {A1, B1}, B2 for {A1, B2}, B3 for {A1, B3}
+and B4 for {A1, B4}
+
+- every A -> every B:  B1 for {A1, B1}, B2 for {A1,B2}, B3 for {A1,
+B3}, {A2, B3} and {A3, B3}, B4 for {A1, B4}, {A2, B4}, {A3,
+B4} and {A4, B4}
+
+- every (A->B): B1 for {A1, B1}, B3 for {A2, B3} and B4 for {A4,
+B4}
