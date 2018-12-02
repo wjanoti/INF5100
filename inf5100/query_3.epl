@@ -1,6 +1,4 @@
 SELECT
- 	AVG(temp_fahrenheit)
+	MAX(wind_direction), MIN(wind_direction)
 FROM
-	Tick.win:length_batch(100)
-WHERE
-    location = 'Santa Fe'
+	Tick.win:length_batch(200)
